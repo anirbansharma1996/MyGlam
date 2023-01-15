@@ -9,9 +9,7 @@ import { AppContextProvider } from './context/Appcontext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AppContextProvider>
-
   <ChakraProvider>
-
   <BrowserRouter>
     <App />
   </BrowserRouter>

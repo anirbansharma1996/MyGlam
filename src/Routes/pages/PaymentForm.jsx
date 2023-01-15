@@ -88,31 +88,31 @@ const PaymentForm = () => {
            
              <VStack>
              <HStack>
-             <FormControl  >
+             <FormControl isRequired >
                <FormLabel>First Name</FormLabel>
                <Input size="sm" />
              
              </FormControl>
-             <FormControl  >
+             <FormControl isRequired >
                <FormLabel>Last Name</FormLabel>
                <Input size="sm" />
                
              </FormControl>
              </HStack>
 
-             <FormControl  >
+             <FormControl isRequired >
                <FormLabel>Address</FormLabel>
                <Input size="sm" />
               
              </FormControl>
 
              <HStack>
-             <FormControl  >
+             <FormControl isRequired >
                <FormLabel>City</FormLabel>
                <Input size="sm" />
              
              </FormControl>
-             <FormControl  >
+             <FormControl isRequired >
                <FormLabel>State</FormLabel>
                <Input type="city" size="sm" />
                
@@ -126,13 +126,13 @@ const PaymentForm = () => {
             <VStack>
 
                 <HStack width="full" >
-                 <FormControl  >
+                 <FormControl isRequired >
                    <FormLabel>Card Number</FormLabel>
-                   <Input  size="sm" />
+                   <Input type='number' maxLength='16' size="sm" />
                  
                  </FormControl>
 
-                 <FormControl >
+                 <FormControl isRequired>
                    <FormLabel>CVV</FormLabel>
                    <HStack width="full" >
 
@@ -149,12 +149,12 @@ const PaymentForm = () => {
                  </HStack>
 
                  <HStack>
-             <FormControl  >
+             <FormControl  isRequired>
                <FormLabel>Exp Month</FormLabel>
                <Input size="sm" />
              
              </FormControl>
-             <FormControl  >
+             <FormControl isRequired  >
                <FormLabel>Exp Year</FormLabel>
                <Input size="sm" />
                

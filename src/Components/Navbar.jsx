@@ -57,22 +57,13 @@ const toast = useToast()
 
     toast({
 
-      title: 'LOGOUT User Successfull.',
-
-   
-
+      title: 'Logout Successfull.',
       // description: "created by suFi.",
-
+      description: "You,ve Logged out.",
       status: 'warning',
-
       duration: 3000,
-
       isClosable: true,
-
     })
-
-
-
     LogOutUser()
 
   }
@@ -107,7 +98,7 @@ const toast = useToast()
   
  
   {isAuth ? <>
-    <Text>{userName}</Text>
+    <Text as='b'>{userName}</Text>
     <Button onClick={()=>LogOut_User()}>LOGOUT</Button>
   </>
   : <>
